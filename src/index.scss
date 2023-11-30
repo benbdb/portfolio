@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap");
+
+:root {
+  font-family: "Montserrat", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  color-scheme: light dark;
+  --primary-color: #1c1c1c;
+  --secondary-color: #eef0f2;
+  --tertiary-color: #ecebe4;
+  --bg-color: #fafaff;
+
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px;
+  position: fixed;
+  width: 100%;
+  background-color: var(--secondary-color);
+
+  h2 {
+    padding-left: 2rem;
+    margin: 0;
+    margin-right: auto;
+    font-size: 4rem;
+    cursor: pointer;
+    color: var(--bg-color);
+  }
+
+  a {
+    padding-inline: 2rem;
+    cursor: pointer;
+    color: var(--bg-color);
+  }
+}
+
+#root div {
+  height: 100vh;
+}
+
+#intro-page {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+
+  h1 {
+    padding-top: 15rem;
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin: 0;
+    max-width: 55rem;
+    color: var(--tertiary-color);
+  }
+
+  #description-2 {
+    margin-top: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #fafaff;
+    --secondary-color: #eef0f2;
+    --tertiary-color: #ecebe4;
+    --bg-color: #1c1c1c;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}
